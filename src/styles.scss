@@ -6,7 +6,7 @@ body {
 
 body {
     color: white;
-    background: #e8e80e;
+    background: #0e4542;
 }
 
 .swiper {
@@ -30,6 +30,10 @@ body {
 }
 .bg-game-2 {
     background-image: url("./images/bg-CosmoJump.png");
+    background-size: cover;
+}
+.bg-page {
+    background-image: url("./images/gears.png");
     background-size: cover;
 }
 
@@ -153,7 +157,7 @@ body {
 
 @keyframes cosmo {
     0%, 100% {
-        transform: translateY(-50%);
+        transform: translateY(-40%);
     }
     50% {
         transform: none;

@@ -1,7 +1,8 @@
 ---
-import { Image } from 'astro:assets';
-import cosmoImg from '../images/cosmo.png';
 import "../styles.scss";
+import SlideOne from '../components/SlideOne.astro';
+import SlideTwo from '../components/SlideTwo.astro';
+import SlideThree from "../components/SlideThree.astro";
 ---
 
 <html lang="en">
@@ -25,66 +26,9 @@ import "../styles.scss";
 
 	<div class="swiper">
 		<div class="swiper-wrapper">
-
-			<div class="swiper-slide bg-game-1">
-				<div class="w-full h-full bg-gradient-to-r from-black to-75% flex items-center">
-					<div class="px-4 md:px-0 md:w-1/2  md:ml-20 xl:ml-40 max-w-screen-sm space-y-6 text-center sm:text-left">
-						<div class="text-4xl sm:text-6xl md:text-6xl xl:text-7xl text-white">CaveGame</div>
-						<div class="text-lg md:text-2xl text-white opacity-70">Free Open World game where you have to solve problems on your way and kill the boss! </div>
-
-						<a href="#" class="btn-action w-full sm:w-96">Download</a>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="swiper-slide bg-game-2">
-				<div class="w-full h-full bg-gradient-to-l from-black to-100% md:to-55% md:grid grid-cols-5">
-
-					<div class="alien-wrap hidden md:block">
-						<img src={cosmoImg.src} alt="Alien ship" class="animation-cosmo">
-					</div>
-
-					<div class="col-span-3"></div>
-					<div class="col-span-2 flex items-center h-full">
-						<div class="text-center md:text-right space-y-6 px-4 md:px-0 md:pr-40">
-							<div class=" text-4xl md:text-6xl xl:text-7xl text-white">CosmoJump</div>
-							<div class="text-lg md:text-2xl text-white opacity-70 ">Free 2D game where you have to jump between space rocks and beat your own record!</div>
-
-							<!--2 Button-->
-							<a href="#" class="btn-cosmo ml-auto w-full sm:w-96">
-								<div class="text-center">Download</div>
-								<svg width="79"  height="46" viewBox="0 0 79 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g filter="url(#filter0_f_618_1123)">
-										<path d="M42.9 2H76.5L34.5 44H2L42.9 2Z" fill="url(#paint0_linear_618_1123)"/>
-									</g>
-									<defs>
-										<filter id="filter0_f_618_1123" x="0" y="0" width="78.5" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-											<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-											<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-											<feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_618_1123"/>
-										</filter>
-										<linearGradient id="paint0_linear_618_1123" x1="76.5" y1="2.00002" x2="34.5" y2="44" gradientUnits="userSpaceOnUse">
-											<stop stop-color="white" stop-opacity="0.6"/>
-											<stop offset="1" stop-color="white" stop-opacity="0.05"/>
-										</linearGradient>
-									</defs>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide bg-page">
-				<div class="w-full h-full bg-gradient-to-r from-black to-75% flex items-center">
-					<div class="px-4 md:px-0 md:w-1/2  md:ml-20 xl:ml-40 max-w-screen-sm space-y-6 text-center sm:text-left">
-						<div class="text-4xl sm:text-6xl md:text-6xl xl:text-7xl text-white">Instruction</div>
-						<div class="text-lg md:text-2xl text-white opacity-70">Free Open World game where you have to solve problems on your way and kill the boss! </div>
-
-					</div>
-				</div>
-			</div>
-
+			<SlideOne/>
+			<SlideTwo/>
+			<SlideThree/>
 		</div>
 		<div class="swiper-pagination"></div>
 	</div>
